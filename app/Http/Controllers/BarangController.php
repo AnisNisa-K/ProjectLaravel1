@@ -22,7 +22,7 @@ class BarangController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'gambar'=> 'required|image|mimes:jpeg,jpg,png|max:2048',
+            'gambar'=> 'required|image|mimes:jpeg,jpg,png|max:8000',
             'nama_barang' => 'required|min:5',
             'id_jenis'=> 'required|numeric',
             'harga_beli'=> 'required|numeric',

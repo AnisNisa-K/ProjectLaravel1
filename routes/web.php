@@ -54,10 +54,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/barang_masuk', [BarangMasukController::class, 'index']);
     Route::get('/barang_masuk/tambah', [BarangMasukController::class, 'create']);
     Route::post('/barang_masuk/simpan', [BarangMasukController::class, 'store']);
-    Route::get('/barang_masuk/{id}/show', [BarangController::class, 'show']);
+    Route::get('/barang_masuk/{id}/show', [BarangMasukController::class, 'show']);
 
     // Halaman CRUD Barang Keluar
     Route::get('/barang_keluar', [BarangKeluarController::class, 'index']);
     Route::get('/barang_keluar/tambah', [BarangKeluarController::class, 'create']);
     Route::post('/barang_keluar/simpan', [BarangKeluarController::class, 'store']);
+    Route::get('/barang_keluar/{id}/show', [BarangKeluarController::class, 'show']);
+
 });

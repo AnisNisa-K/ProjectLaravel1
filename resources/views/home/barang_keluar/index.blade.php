@@ -24,7 +24,7 @@
                                         <tr>
                                             <th scope="col">No</th>
                                             <th scope="col">Nama Barang</th>
-                                            <th scope="col">Nama Supplier</th>
+                                            <th scope="col">Nama Customer</th>
                                             <th scope="col">Jumlah</th>
                                             <th scope="col">Aksi</th>
                                         </tr>
@@ -34,7 +34,7 @@
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $barang_keluar->Barang->nama_barang}}</td></td>
-                                            <td>{{ $barang_keluar->Supplier->nama_supplier }}</td>
+                                            <td>{{ $barang_keluar->nama_customer }}</td>
                                             <td>{{ $barang_keluar->jumlah }}</td>
                                             <td><a href="/barang_keluar/{{ $barang_keluar->id }}/show" class="btn btn-secondary"><i class="fas fa-eye"></i> Detail</a></td>
                                         </tr>

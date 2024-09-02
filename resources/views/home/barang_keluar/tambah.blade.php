@@ -24,22 +24,24 @@
 
                                 @endforeach
                             </select>
-                            @error('nama_barang')
+                            @error('id_barang')
                             <div class="alert alert-danger mt-2">
                                 {{ $message }}
                             </div>
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="" class="form-label">Nama Supplier</label>
-                            <select name="id_supplier" id="" class="form-control">
-                                <option value="">Pilih Supplier</option>
-                                @foreach ($supplier as $supplier)
-                                    <option value="{{ $supplier->id }}">{{ $supplier->nama_supplier}}</option>
-
-                                @endforeach
-                            </select>
-                            @error('nama_supplier')
+                            <label for="" class="form-label">Nama Customer</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="nama_customer"
+                                id=""
+                                value="{{ old('nama_customer') }}"
+                                aria-describedby="helpId"
+                                placeholder="isi nama customer"
+                            />
+                            @error('nama_customer')
                             <div class="alert alert-danger mt-2">
                                 {{ $message }}
                             </div>
