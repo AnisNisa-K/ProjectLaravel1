@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 // Halaman login/logout
 Route::get('/login', [LoginController::class, 'showLogin'])->name('login');
 Route::post('/actionlogin', [LoginController::class,'actionLogin'])->name('actionLogin');
-Route::post('/logout', [LoginController::class,'actionLogout'])->name('actionLogout');
+Route::get('/logout', [LoginController::class,'actionLogout'])->name('actionLogout');
 
 Route::middleware('auth')->group(function () {
     // Halaman dashboard
