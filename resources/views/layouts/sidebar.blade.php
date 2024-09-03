@@ -67,14 +67,15 @@
                   <p>Barang Keluar</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="/logout" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Logout</p>
                 </a>
               </li>
             </ul>
           </li>
+          <i class="nav-item">
+                <a href="/logout" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Logout</p>
+          </i>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

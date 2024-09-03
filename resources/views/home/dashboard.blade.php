@@ -59,7 +59,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>{{ $totalBarangKeluar}}</h3>
+                <h3>{{ $totalBarangKeluar }}</h3>
 
                 <p>Barang Keluar</p>
               </div>
@@ -74,7 +74,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>{{ $totalBarangMasuk}}</h3>
+                <h3>{{ $totalBarangMasuk }}</h3>
 
                 <p>Transaksi</p>
               </div>
