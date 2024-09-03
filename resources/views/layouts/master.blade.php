@@ -29,12 +29,7 @@
   <!-- datatable css -->
   <link rel="stylesheet" href="{{ asset('../assets/datatable/dataTables.bootstrap4.min.css')}}">
   <!-- datatable css -->
-  <script src="{{ asset('../../assets/datatable/datatables.min.js')}}"></script>
-  <script>
-    $(document).ready(function(){
-        $('#datatable').DataTable()
-    })
-  </script>
+  
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -130,6 +125,12 @@
   });
   @endif
 </script>
+<script src="{{ asset('../assets/datatable/datatables.min.js')}}"></script>
+  <script>
+    $(document).ready(function(){
+        $('#datatable').DataTable()
+    });
+  </script>
 <!-- ChartJS -->
 <script src="{{ asset('../../assets/plugins/chart.js/Chart.min.js') }}"></script>
 <!-- Sparkline -->

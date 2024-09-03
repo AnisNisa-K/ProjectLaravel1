@@ -18,7 +18,7 @@
                                 class="table-responsive"
                             >
                                 <table
-                                    class="table"
+                                    class="table" id="datatable"
                                 >
                                     <thead>
                                         <tr>
